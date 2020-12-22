@@ -1,0 +1,21 @@
+<h2>Personal Info</h2>
+<div class="image-container">
+    <img id="profile-image" height="200px" src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/>
+</div>
+<div class="form">
+    <h3>Personal Information</h3>
+
+    <form action="post">
+        <label>Name</label>
+        <input type="text" name="name" id="name"/>
+        <label>Email</label>
+        <input type="email" name="email" id="email"/>
+        <div class="profile-image-container">
+            <label>profile image url</label>
+            <input type="text" name="image-link" id="image-url"/>
+        </div>
+    </form>
+    <button onclick="showImageInput()" id="change-image">Change Profile Image</button>
+    <button onclick="changeData()" id="save-btn">Save</button>
+
+</div>

@@ -1,0 +1,19 @@
+<h2>Company Info</h2>
+<section  id="company-info-data">
+    <label>Company name:</label>
+    <label>Addidas</label><br>
+    <label>Company address: </label><label>32 Kensington High street</label><br>
+    <label>Company email: </label><label>addidas@addidas.com</label>
+    </section>
+    <section id="text-area-container" class="hideContainer">
+        <textarea id="text-area"></textarea>
+    </section>
+    <button onclick="editCompanyInfo()" id='company-info-btn'>Edit</button>
+    <button onclick="saveCompanyInfo()" class="hideContainer" id="save-btn">Save</button>
+    <select name="country" id="country-list">
+        <option value="">Select country</option>
+    </select>
+
+    <script>
+        loadCountries();
+    </script>

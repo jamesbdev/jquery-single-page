@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile spa</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function displayContent(container) {
+        jQuery(".containers").addClass("hideContainer");
+        jQuery("#" + container).removeClass("hideContainer");
+      }
+
+      function changeData() {
+            jQuery("#previous-email").html(
+                jQuery("#email").val()
+            );
+            jQuery('#previous-name').html(
+                jQuery("#name").val()
+            );
+    }
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-section">
+        <h2>My profile</h2>
+        <h1>Jeff Mozly</h1>
+        <nav>
+          <ul>
+            <li>Personal Info</li>
+            <li onclick="displayContent('companyInfo');">Company Info</li>
+            <li onclick="displayContent('payments');">Payments</li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li onclick="displayContent('terms');">Terms and conditions</li>
+            <li>Logout</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-section">
+        <section id="personalInfo" class="containers">
+          <h2>Personal Info</h2>
+          <div class="image-container">
+            <img src="" alt="profile image" />
+          </div>
+          <div class="form">
+            <h3>Personal Information</h3>
+            <form action="">
+              <label>Name</label>
+              <input type="text" name="name" id="name" />
+              <label>Email</label>
+              <input type="email" name="email" id="email" />
+              <label>Password</label>
+              <input type="password" name="password" id="password" />
+              <button>Change password</button>
+            </form>
+            <button class="save-btn">Save</button>
+          </div>
+        </section>
+        <section id="companyInfo" class="hideContainer containers">
+          <h2>Company Info</h2>
+        </section>
+        <section id="payments" class="hideContainer containers">
+          <h2>Payments</h2>
+        </section>
+        <section id="terms" class="hideContainer containers">
+          <h2>Terms</h2>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile spa</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</head>
+<body class="theme">
+    <div class="main-container">
+    <div class=left-section>
+        <h2>My profile</h2>
+        <h1 id="previous-name">Jeff Mozly</h1>
+        <p id="previous-email">test@email.com </p>
+     
+        <nav class="top-links">
+            <ul>
+                <li id="personal-info-link" onclick="displayContent('personalInfo');">Personal Info</li>
+                <li id="company-info-link" onclick="displayContent('companyInfo');">Company Info</li>
+                <li id="payments-info-link" onclick="displayContent('payments');">Payments</li>
+             
+            </ul>
+        </nav>
+        <nav class="bottom-links">
+            <ul>
+                <li id="terms-link" onclick="displayContent('terms');">Terms and conditions</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+        <button onclick="changeTheme()">Switch theme</button>
+    </div>
+    <div class="right-section">
+        <section id="personalInfo">
+          
+        </section>
+        <section id="companyInfo" class="hideContainer containers">
+        </section>
+        <section id="payments" class="hideContainer containers">
+        </section>
+        <section id="terms" class="hideContainer containers">
+     
+        </section>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

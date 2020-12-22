@@ -1,0 +1,96 @@
+.main-container {
+    display: flex;
+    padding: 3em;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: arial;
+}
+
+.save-btn {
+    padding: 1em;
+    border-radius: 10%;
+    background-color: #01a3b6;
+    border: none;
+    color: white;
+    width: 10em;
+    position: relative;
+    left: 70em;
+}
+
+.password-btn {
+    padding: 1em;
+    border-radius: 10%;
+    background-color: #01a3b6;
+    border: none;
+    color: white;
+    width: 10em;
+    margin-top: 2em;
+}
+
+.hideContainer {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2em;
+}
+
+input {
+    margin: 1em 0;
+}
+
+.right-section {
+    width: 70%;
+    border: 3px solid #01a3b6;
+    padding: 2em;
+}
+
+.left-section {
+    width: 30%;
+    border: 3px solid #01a3b6;
+    padding: 2em;
+    margin-right: 2em;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 1em 0;
+
+}
+
+li:hover {
+    color: #01a3b6;
+    cursor: pointer;
+}
+
+.bottom-links {
+    position: relative;
+    top: 17em;
+}
+
+.profile-image-container {
+    display: none;
+}
+
+.darktheme {
+    background: black;
+    color: white;
+}
+
+.theme {
+    background: white;
+    color: black;
+}
+
+
+
