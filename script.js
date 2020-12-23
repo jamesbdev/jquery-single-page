@@ -21,6 +21,9 @@ const changeData = function() {
     jQuery('#previous-name').html(
         jQuery("#name").val()
     );
+    jQuery('#previous-age').html(
+        jQuery('#age').val()
+    );
     if((jQuery('#image-url').val() !== "")) {
         jQuery('#profile-image').attr('src', jQuery("#image-url").val()); 
      }
