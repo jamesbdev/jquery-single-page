@@ -56,11 +56,10 @@ function saveCompanyInfo() {
 
 function loadCountries(){
     $.ajax({ 
-        url: 'http://127.0.0.1:5500/class_3%20-%20SPA/countries/countries.json',
+        url: 'http://127.0.0.1:5500/countries/countries.json',
         success: function(response){
             let countries = Object.entries(response);
             countries.forEach(function(country){
-                console.log(country);
                 jQuery('#country-list').append('<option value=' + country[0] + '>' + country[1] + '</option>');
             })
                 
