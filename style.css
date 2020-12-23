@@ -73,10 +73,10 @@ li:hover {
     cursor: pointer;
 }
 
-.bottom-links {
+/* .bottom-links {
     position: relative;
     top: 17em;
-}
+} */
 
 .profile-image-container {
     display: none;
