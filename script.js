@@ -24,6 +24,9 @@ const changeData = function() {
     jQuery('#previous-age').html(
         jQuery('#age').val()
     );
+    jQuery('#previous-country').html(
+        jQuery('#country-list').val()
+    );
     if((jQuery('#image-url').val() !== "")) {
         jQuery('#profile-image').attr('src', jQuery("#image-url").val()); 
      }
